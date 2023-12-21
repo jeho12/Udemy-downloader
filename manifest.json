@@ -1,0 +1,28 @@
+{
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "manifest_version": 2,
+    "name": "Udemy Downloader",
+    "description": "Udemy downloader extension. ",
+    "short_name": "Udemy download",
+    "version": "3.1",
+    "background": {
+        "scripts": [
+            "createWindow.js"
+        ],
+        "persistent": false
+    },
+    "icons": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "permissions": [
+        "*://*.udemy.com/*",
+        "downloads",
+        "downloads.shelf",
+        "cookies"
+    ],
+    "browser_action": {
+        "default_icon": "logo.png"
+    }
+}
